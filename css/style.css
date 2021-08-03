@@ -152,7 +152,7 @@ section .formbox a{
 section .formbox a:before{
 	content:url(../images/icons/gear.png);
 	line-height:0;
-	margin-right:8px;
+	margin-right:px;
 }
 .headerbox offer{
 	padding-bottom:55px;
@@ -172,5 +172,29 @@ section .formbox a:before{
 
 /*offer - section*/
 section .offer{
-	
+	margin-top:66px;
+}
+
+section .offer .list{
+	margin:-20px;
+	flex-wrap;
+}
+section .offer .item{
+	flex:auto;
+	margin:20px;
+	width:280px;
+}
+section .offer .image {
+	height:164px;
+	flex-direction:column;
+	justify-content:center;
+	position:relative;
+}
+section .offer .image a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;
+	font-size:0;
 }
