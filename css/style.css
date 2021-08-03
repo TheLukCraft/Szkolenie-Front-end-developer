@@ -136,4 +136,41 @@ section .formbox button{
 	align-self:stretch;
 	width:94px;
 	font-size: 0px;
+	outline:none;
+	cursor:pointer;
+}
+section .formbox div {
+	width:100%;
+	max-width:510px;
+	justify-content:flex-end;
+	padding:18px 17px 0 0;
+}
+section .formbox a{
+	color: #d1d2d5;
+	font-size:13px;
+}
+section .formbox a:before{
+	content:url(../images/icons/gear.png);
+	line-height:0;
+	margin-right:8px;
+}
+.headerbox offer{
+	padding-bottom:55px;
+}
+.headerbox p{
+	font-color: #a1a1a1;
+	font-size: 18px;
+	text-transform:uppercase;
+}
+.headerbox h4{
+	text-size:45;
+	font-weight:bold;
+	font-color: #a1a1a1;
+	text-transform:uppercase;
+	margin-top=-11px;
+}
+
+/*offer - section*/
+section .offer{
+	
 }
