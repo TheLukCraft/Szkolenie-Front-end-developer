@@ -15,6 +15,7 @@
 }
 body{
 	background:url(../images/slider/bg.jpg) no-repeat center top;
+	padding-bottom:600px;
 }
 .center {
 	margin:0 auto;
@@ -76,10 +77,6 @@ header .linetop ul img{
 header .linetop li +li {
 	margin-left:45px;
 }
-header .linebottom searcher {
-	
-}
-
 
 /*linebottom - header*/
 header .linebottom nav{
@@ -109,4 +106,34 @@ header .linebottom .social{
 }
 header .linebottom .social li+li {
 	margin-left:24px;
+}
+
+/*Formbox -section*/
+section .formbox{
+	height:404px;
+	flex-direction:column;
+	justify-content:center;
+}
+section .formbox form{
+	width:100%;
+	max-width:510px;
+	background:#f1f2f5;
+	border:2px solid #c8c8c8;
+}
+section .formbox input{
+	flex:auto;
+	height:74px;
+	border:none;
+	background:#f1f2f5;
+	padding-left:27px;
+	font-size:17px;
+	outline:none;
+}
+section .formbox button{
+	background:url(../images/icons/search.png) no-repeat center;
+	border: none;
+	height:74px;
+	align-self:stretch;
+	width:94px;
+	font-size: 0px;
 }
