@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root{
 	--red:#de1a54;
+	--darkred:#ad0d3c;
 	--yellow:#fbd800;
 	--white:#fff;
 	--gray: #7a7a7a;
+	--text: #767676;
 }
 *{
 	margin:0;
@@ -154,7 +156,7 @@ section .formbox a:before{
 	line-height:0;
 	margin-right:px;
 }
-.headerbox offer{
+.headerbox .offer{
 	padding-bottom:55px;
 }
 .headerbox p{
@@ -170,6 +172,41 @@ section .formbox a:before{
 	margin-top=-11px;
 }
 
+.headerbox2 h4{
+	text-size:45;
+	font-weight:bold;
+	font-color: #a1a1a1;
+	text-transform:uppercase;
+	margin-top=-11px;
+}
+.linkbox{
+	background:var(--red);
+	border-bottom: 2px solid var(--darkred);
+	width:228px;
+	padding:0 15px;
+	height:48px;
+	margin: 18px auto 0;
+}
+.linkbox .text{
+	font-size: 11px;
+	color:var(--white);
+}
+.linkbox .text strong{
+	font-size: 20px;
+	display:block;
+	margin-top:-5px;
+}
+.linkbox .break{
+	min-width:1px;
+	height:32px;
+	background:var(--darkred);
+}
+.linkbox a{
+	font-size:15px;
+	color:var(--white);
+	margin-right:15px;
+}
+
 /*offer - section*/
 section .offer{
 	margin-top:66px;
@@ -177,12 +214,13 @@ section .offer{
 
 section .offer .list{
 	margin:-20px;
-	flex-wrap;
+	flex-wrap:wrap;
 }
 section .offer .item{
 	flex:auto;
 	margin:20px;
 	width:280px;
+	position: relative;
 }
 section .offer .image {
 	height:164px;
@@ -197,4 +235,41 @@ section .offer .image a{
 	height:100%;
 	width:100%;
 	font-size:0;
+}
+section .offer .image h3{
+	font: 400 16px Open Sans;
+	color:var(--white);
+	text-transform:uppercase;
+}
+section .offer .image h2{
+	font-size: 26px;
+	color:var(--yellow);
+	text-transform:uppercase;
+	margin-top: -5px;
+}
+section .offer .item > span{
+		position:absolute;
+		background:var(--yellow);
+		left:0;
+		right:0;
+		width:134px;
+		margin:0 auto;
+		height:32px;
+		justify-content:center;
+		margin-top:-16px;
+}
+section .offer .item p{
+	margin-top:35px;
+	padding:0 10px;
+	font-size:15px;
+	color:var(--text);
+	line-height:1.8em;
+	text-align: center;
+}
+
+/*Last Minute - section*/
+section .lastminute{
+	margin-top:66px;
+	padding:66px 0;
+	background:url(../images/lastminute/bg.jpg) no-repeat center / cover;
 }
