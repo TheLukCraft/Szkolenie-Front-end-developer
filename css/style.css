@@ -6,6 +6,7 @@
 	--white:#fff;
 	--gray: #7a7a7a;
 	--text: #767676;
+	--darktext: #110e20;
 }
 *{
 	margin:0;
@@ -272,4 +273,113 @@ section .lastminute{
 	margin-top:66px;
 	padding:66px 0;
 	background:url(../images/lastminute/bg.jpg) no-repeat center / cover;
+}
+section .lastminute .headerbox p{
+	color:#110E20;
+}
+ection .lastminute .list{
+	margin:-30px -20px;
+	/* flex-wrap:wrap; */
+}
+section .lastminute .item{
+	flex:auto;
+	margin:30px 20px;
+	width:400px;
+	background:#110e20;
+	padding:23px;
+}
+section .lastminute .image {
+	align-self:stretch;
+	min-height:320px;
+	min-height:400px;
+	min-width:220px;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-start;
+	position:relative;
+	margin-right:19px;
+	padding:16px;
+}
+section .lastminute .image h3{
+	padding: 7px 10px;
+	min-width:84px;
+	background:var(--yellow);
+	color:var(--darktext);
+	text-transform:uppercase;
+	font: 400 15px Open Sans;
+}
+section .lastminute .image h2{
+	padding: 7px 10px;
+	min-width:84px;
+	background:var(--darktext);
+	color:var(--white);
+	text-transform:uppercase;
+	font: 400 15px Open Sans;
+}
+section .lastminute .image a{
+	position: absolute;
+	height:100%;
+	width:100%;
+	font-size:0;
+}
+section .lastminute ul{
+	flex-wrap:wrap;
+	margin:-5px;
+}
+section .lastminute li{
+	margin:5px;
+	width:100px;
+	flex:auto;
+	justify-content:flex-start;
+}
+section .lastminute li:before{
+	content:url(../images/lastminute/airStart.png);
+	margin-right:10px;
+}
+section .lastminute li.przylot:before{
+	content:url(../images/lastminute/aireEnd.png);
+}
+section .lastminute li.ocena:before{
+	content:url(../images/lastminute/star.png);
+}
+section .lastminute li.hotel:before{
+	content:url(../images/lastminute/bed.png);
+}
+section .lastminute li span{
+	font-size:12px;
+	color: #9a9a9a;
+}
+section .lastminute li strong{
+	display:block;
+	margin-top:-3px;
+	font:400 13px Open Sans;
+	Color:var(--white);
+}
+section .lastminute .item p{
+	font-size:15px;
+	color:#9a9a9a;
+	line-height:1.8em;
+	border-bottom:1px solid #252042;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+
+/*footer - section*/
+
+footer .top{
+	height:290px;
+	background:var(--darktext);
+	color: #5a5478;
+	line-height:1.8em;
+	text-align:center;
+}
+footer .top p{
+	max-width:620px;
+}
+footer >p{
+	padding: 35px 15px;
+	color: #524f65;
+	font-size: 13px;
+	text-align:center;
+	background:#0b0917;
 }
