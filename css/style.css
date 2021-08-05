@@ -33,7 +33,7 @@ body{
 	justify-content:space-between;
 	align-items:center;
 }
-a,img, .transitionEl{
+a,img, .transitionEl, li+li span{
 	-webkit-transition: all 200ms linear;
 	-moz-transition: all 200ms linear;
 	-ms-transition: all 200ms linear;
@@ -382,4 +382,18 @@ footer >p{
 	font-size: 13px;
 	text-align:center;
 	background:#0b0917;
+}
+
+/**************************************/
+/*rwd*/
+@media (max-width:740px){
+.linetop ul span{
+	text-indent: 100%;
+    white-space: nowrap;
+	overflow: hidden;
+	
+	}
+header .linetop li+li span{
+	font-size:0;
+}
 }
