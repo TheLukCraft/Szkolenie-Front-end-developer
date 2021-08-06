@@ -8,16 +8,22 @@
 	<link href="https://fonts.googleapis.com">
 	<link href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8" >
 	
 	<title>Tytuł wyświetlany</title>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/Tmpl.js"></script>
 </head>
 <body>
 	<header>
 		<div class="linetop">
 			<div class="center flexBlock">
-				<div class="user flexBlock">
+				<div class="user flexBlock transitionEl">
 					<span class="image"></span>
 					<a href="#" class="red">rejestracja</a>
 					<span class="break">/</span>
@@ -47,9 +53,10 @@
 			 <span class="break">
 			 </span>
 				<nav>
-					<ul class="flexBlock">
+					<a href="#mobile" onclick="Tmpl.openMenu(); return false" class="mobile flexBlock">MENU<span class="transitionEl"></span></a>
+					<ul class="flexBlock activeMenu">
 						<li>
-							<a href="#">Strona Główna</a>
+							<a href="#" onclick="Tmpl.zmientlo(); return false">Strona Główna</a>
 						</li><li>
 							<a href="#">Oferta</a>
 						</li><li>
@@ -85,7 +92,7 @@
 		</div>
 	</header>
 	<section>
-		<div class="formbox center flexBlock">
+		<div class="formbox center flexBlock" data-aos="fade-up">
 			<form action="#" method="get" class="flexBlock">
 				<input type="text" name="q" placeholder="Gdzie chcesz się udać..."/>
 				<button type="submit">Wyślij</button>
@@ -94,13 +101,13 @@
 				<a href="#" class="flexBlock">Wyszukiwanie zaawansowane</a>
 			</div>
 		</div>
-		<div class="offer center">
+		<div class="offer center" data-aos="fade-up">
 			<div class="headerbox">
 				<p>Wycieczki</p>
 				<h4>Last Minute</h4>
 			</div>
 			<div class="list flexBlock">
-				<div class="item">
+				<div class="item" >
 					<div class="image flexBlock" style="background:url(images/offer/1.jpg) no-repeat center / cover">
 						<h3>Europa</h3>
 						<h2>Budapeszt</h2>
@@ -187,13 +194,13 @@
 			</div>
 			</div>
 			
-			<div class="lastminute">
+			<div class="lastminute" data-aos="fade-up">
 				<div class="center">
 					<div class="headerbox">
 						<p>Wycieczki</p>
 						<h4>Last Minute</h4>
 					</div>
-				<div class="list flexBlock">
+				<div class="list flexBlock owl-carousel">
 					<div class="item flexBlock">
 						<div class="image flexBlock" style="background:url(images/lastminute/1.jpg) no-repeat center / cover">
 							<h3>Egipt</h3>
@@ -263,5 +270,9 @@ sit amet, pellentesque porttitor ex.
 		</div>
 		<p>Projekt strona 2021 (c) / Wszystkie prawa zastrzeżone</p>
 	</footer>
+	<script>
+		AOS.init();
+		Tmpl.slider();
+	</script>
 </body>
 </html>
