@@ -57,6 +57,11 @@ li,
     transition: all 200ms linear;
 }
 
+#bg-image.lazy {
+   background-image: none;
+   background-color: #F1F1FA;
+}
+
 
 /*linetop - header*/
 
